@@ -179,10 +179,10 @@
         return options.emptyUserAgentDeviceType||'desktop';
       }
 
-      if (ua.match(/GoogleTV|SmartTV|Internet TV|NetCast|NETTV|AppleTV|boxee|Kylo|Roku|DLNADOC|CE\-HTML/i)) {
+      if (ua.match(/GoogleTV|SmartTV|SMART-TV|Internet TV|NetCast|NETTV|AppleTV|Apple TV|CrKey|AFTT|AFTS|NEO-X5|Nexus Player|AFTM|BRAVIA|Opera TV|DTV|boxee|Kylo|Roku|DLNADOC|CE\-HTML/i)) {
         // if user agent is a smart TV - http://goo.gl/FocDk
         return 'tv';
-      } else if (ua.match(/Xbox|PLAYSTATION 3|Wii/i)) {
+      } else if (ua.match(/Xbox|PLAYSTATION 3|PlayStation 4|Wii/i)) {
         // if user agent is a TV Based Gaming Console
         return 'tv';
       } else if (ua.match(/iP(a|ro)d/i) || (ua.match(/tablet/i) && !ua.match(/RX-34/i)) || ua.match(/FOLIO/i)) {
