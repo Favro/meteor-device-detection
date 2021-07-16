@@ -5,11 +5,11 @@ Package.describe({
   git: "https://github.com/mystor/meteor-device-detection.git"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.10.2');
 
   api.use(['meteor', 'underscore', 'deps', 'session', 'templating', 'ui'], 'client');
 
-  api.add_files(['device_detection.js', 'device_helpers.js'], 'client');
+  api.addFiles(['device_detection.js', 'device_helpers.js'], 'client');
 });
 
